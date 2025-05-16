@@ -36,3 +36,9 @@ Url `amqp://guest:guest@localhost:5672` menunjukkan alamat koneksi ke message br
 > Running RabbitMQ as message broker
 
 <img src="image/image_1.png">
+
+> Sending and Processing Event
+
+<img src="image/image_2.png">
+
+Pada gambar di atas, terlihat proses komunikasi antara aplikasi publisher dan subscriber menggunakan RabbitMQ sebagai message broker. Saat program publisher dijalankan, ia mengirimkan lima event bertipe UserCreatedEventMessage ke RabbitMQ. Event-event tersebut kemudian diterima oleh aplikasi subscriber yang berjalan secara paralel. Setiap event yang diterima ditampilkan di konsol subscriber sebagai output, menunjukkan bahwa pesan berhasil dikonsumsi dan diproses. Proses ini menunjukkan implementasi sederhana dari pola komunikasi berbasis event-driven.
