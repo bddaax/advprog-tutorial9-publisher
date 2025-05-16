@@ -31,3 +31,8 @@ Pada satu kali eksekusi, program publisher akan mengirimkan **5 pesan** ke messa
 > Url “amqp\://guest\:guest\@localhost:5672” sama seperti di program subscriber. Apa artinya?
 
 Url `amqp://guest:guest@localhost:5672` menunjukkan alamat koneksi ke message broker, yaitu Rabbitmq, dan penggunaannya yang sama di publisher dan subscriber menunjukkan bahwa **keduanya terhubung ke broker yang sama**. Publisher mengirim pesan ke broker di alamat tersebut, dan subscriber mendengarkan pesan dari broker di alamat yang sama. Hal ini menunjukkan bahwa sistem komunikasi antar aplikasi dilakukan melalui **satu perantara yang sama**, yaitu message broker yang berjalan di `localhost:5672`, dan keduanya menggunakan kredensial yang sama untuk autentikasi. Dengan cara ini, publisher dan subscriber bisa saling berkomunikasi meskipun berjalan sebagai program yang terpisah.
+
+## Message Broker dengan RabbitMQ
+> Running RabbitMQ as message broker
+
+<img src="image/image_1.png">
